@@ -53,14 +53,21 @@ body {
   background-color: #777;
 }
 
-/*Commented out to make images inside carousel be responsive*/
+
 .carousel-inner > .item > img {
   position: absolute;
-  top: -40%;
+  object-fit: cover; /* Makes the image maintain pixel ratio and crops instead of stretching */
+  top: 0;
   left: 0;
+  /* Images will fill the whole container */
   min-width: 100%;
-  min-height: 500px;
-  overflow: hidden;
+  min-height: 100%;
+  overflow: hidden; /* Hides any overflow */
+}
+
+/* Only runs when screen width is minimum of 800 px */
+@media screen and (min-width: 800px) {
+    .carousel-inner > .item > img {top: -30%;} /* Centers the image for wide screens */
 }
 
 
