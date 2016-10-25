@@ -52,15 +52,12 @@ body {
   height: 500px;
   background-color: #777;
 }
-
-/*Commented out to make images inside carousel be responsive*/
 .carousel-inner > .item > img {
   position: absolute;
-  top: -40%;
+  top: 0;
   left: 0;
   min-width: 100%;
-  min-height: 500px;
-  overflow: hidden;
+  height: 500px;
 }
 
 
