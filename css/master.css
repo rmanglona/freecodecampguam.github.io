@@ -4,8 +4,9 @@
   padding-bottom: 30px;
   text-align: center;
 }
-.about img {
+.about .row img {
   height: inherit;
+  overflow: hidden;
   width: 200px;
 }
 .navbar-wrapper {
@@ -28,7 +29,6 @@
   color: white;
 }
 .sponsors {
-  background-color: rgb(277, 277, 277);
   text-align: center;
 }
 .text {
